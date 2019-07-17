@@ -1,0 +1,97 @@
+/* Custom css */
+
+ :global {
+    --primary-color: #be9e0a;
+    --secundary-color: #211c0a;
+    --bg-color: #e2e2e2;
+}
+
+body {
+    background-color: var(--bg-color);
+    /* font-family: 'Pacifico', cursive; */
+    font-family: 'Raleway', sans-serif;
+}
+
+.parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+/* Nav Menu */
+
+.nav-link {
+    color: white!important;
+    transition: all 0.5s ease-out;
+}
+
+.nav-link:hover {
+    color: #be9e0a!important;
+}
+
+.nav-link.active {
+    border-bottom: 1px solid #be9e0a!important;
+}
+
+.navbar-toggler {
+    text-align: center;
+}
+
+.navbar.bg-dark {
+    background-color: #211c0a!important;
+}
+
+.flaticon-menu {
+    color: white;
+    font-size: 45px;
+}
+
+
+/*Home Page - Hero Section*/
+
+.hero::before {
+    background-color: #211c0a;
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 750px;
+    z-index: 0;
+    opacity: 0.8;
+}
+
+.hero {
+    background-image: url('/img/1.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 750px;
+}
+
+.section-title {
+    font-family: 'Pacifico', cursive;
+    color: white!important;
+}
+
+.btn-reservation {
+    padding: 10px;
+    color: white!important;
+    cursor: pointer;
+    background-color: #be9e0a;
+    text-transform: uppercase;
+    border-radius: 5px;
+    border: none;
+}
+
+.btn-reservation a:link {
+    text-decoration: none;
+}
+
+.btn-reservation:hover {
+    color: #be9e0a!important;
+    background-color: #211c0a;
+    transition: all 0.5s ease;
+}
+
+
+/*Section home page*/
