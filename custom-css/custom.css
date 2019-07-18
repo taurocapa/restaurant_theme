@@ -3,10 +3,17 @@
  :global {
     --primary-color: #be9e0a;
     --secundary-color: #211c0a;
+    --secundary-color-rgba: rgba(33, 28, 10, 1);
     --bg-color: #e2e2e2;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
+    margin: 0px;
+    padding: 0px;
     background-color: var(--bg-color);
     /* font-family: 'Pacifico', cursive; */
     font-family: 'Raleway', sans-serif;
@@ -19,7 +26,43 @@ body {
 }
 
 
+/* scroll button*/
+
+.scroll-button {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    z-index: 1;
+}
+
+.scroll-button {
+    color: white;
+    cursor: pointer;
+}
+
+.scroll-button>a:link {
+    text-decoration: none;
+}
+
+.scroll-button-dark {
+    color: black!important;
+    cursor: pointer;
+}
+
+[class^="flaticon-chevron"]:before,
+[class*=" flaticon-chevron"]:before,
+[class^="flaticon-chevron"]:after,
+[class*=" flaticon-chevron"]:after {
+    font-family: Flaticon!important;
+    font-size: 20px!important;
+}
+
+
 /* Nav Menu */
+
+.navbar-bg-dark {
+    background-color: rgba(33, 28, 10, 0.8);
+}
 
 .nav-link {
     color: white!important;
@@ -73,6 +116,11 @@ body {
     color: white!important;
 }
 
+.section-title-dark {
+    font-family: 'Pacifico', cursive;
+    color: black!important!
+}
+
 .btn-reservation {
     padding: 10px;
     color: white!important;
@@ -83,7 +131,7 @@ body {
     border: none;
 }
 
-.btn-reservation a:link {
+.btn-reservation>a:link {
     text-decoration: none;
 }
 
@@ -94,4 +142,12 @@ body {
 }
 
 
-/*Section home page*/
+/* Menu section */
+
+.menu-div {
+    margin-top: 20px
+}
+
+.menu-description {
+    padding: 50px;
+}
